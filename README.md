@@ -45,10 +45,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+<p> I can better group elements within a website</p>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light_gray);
 }
 ```
 
