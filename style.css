@@ -6,45 +6,86 @@
     --dark_blue: hsl(218, 44%, 22%);
 }
 
+/* Main CSS */
+.font-p {
+    font-size: 1rem;
+    font-weight: 400;
+}
 
+.font-h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
 
-.attribution a { color: hsl(228, 45%, 44%);}
-
-body{
-    padding: 0;
+* {
+    box-sizing: border-box;
     margin: 0;
-    background-color: var(--light_gray);
-    font-family: "Outfit", Calibri, Tahoma, sans-serif;
-    display: grid;
-    min-block-size: 100vh;
-    place-content: center;
-    
+    padding: 0;
+    text-decoration: none;
 }
 
-p{
-    font-size: 15px;
-    text-wrap: wrap;
-    text-align: justify;
-    
-    
-} 
-.container{
-
-    background-color: white;
-    width: fit-content;
-    grid-column: 2;
-    border-radius: 5%;
-    
-}
-
-.container img{
-
-    justify-items: center;
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
     justify-content: center;
-    justify-self: center;
-    width: 72%;
-    height: 70%;
-    border-radius: 10%;
-    
-}   
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light_gray);
+}
 
+.container {
+    flex-wrap: wrap;
+    max-width: 320px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.03);
+}
+
+.qr-box {
+   display: block;
+   margin: auto;
+   overflow: hidden;
+   max-width: 100%;
+   border-radius: 10px;
+   transform: scale(1);
+   background-color: #2C7DFA;
+}
+
+.qr-box img{
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: ease-in-out 0.5s;
+}
+
+.qr-box img:hover {
+    transform: rotate(90deg) scale(125%);
+    transition: ease-in-out 0.5s;
+}
+
+.container h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--dark_blue);
+    display: block;
+    margin: 0 auto;
+    padding-top: 36px;
+    transition: ease-in-out 0.5s;
+}
+
+.container h1:hover {
+    color: #2C7DFA;
+    transition: ease-in-out 0.5s;
+}
+
+.container p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--grayish_blue);
+    padding: 24px 0px 36px 0px;
+    margin: 0 20px;
+}
